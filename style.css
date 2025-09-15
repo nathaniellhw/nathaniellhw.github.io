@@ -1,45 +1,102 @@
+/* Style umum */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  background: #f8f9fa;
+  color: #333;
 }
 
+/* Header */
 header {
-  background: #333;
+  background: linear-gradient(135deg, #0066cc, #00aaff);
   color: #fff;
-  padding: 10px 0;
+  text-align: center;
+  padding: 2rem 1rem;
 }
 
-nav ul {
+header h1 {
+  margin: 0.5rem 0;
+  font-size: 2rem;
+}
+
+header .subtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* Foto profil */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Kontainer konten */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+/* Section */
+section {
+  margin: 2rem 0;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  color: #0066cc;
+  margin-bottom: 1rem;
+}
+
+/* List tugas */
+.tasks ul {
   list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+  padding: 0;
 }
 
-nav a {
-  color: #fff;
+.tasks li {
+  margin: 0.7rem 0;
+}
+
+.tasks a {
+  text-decoration: none;
+  background: #00aaff;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.tasks a:hover {
+  background: #0077cc;
+}
+
+/* Kontak */
+.contact a {
+  color: #0066cc;
   text-decoration: none;
 }
 
-section {
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: auto;
+.contact a:hover {
+  text-decoration: underline;
 }
 
-section#about img {
-  width: 150px;
-  border-radius: 50%;
-}
-
-.project-item {
-  margin-bottom: 30px;
-}
-
+/* Footer */
 footer {
   text-align: center;
-  padding: 20px 0;
-  background: #f4f4f4;
+  background: #0066cc;
+  color: #fff;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 8px 8px 0 0;
 }
